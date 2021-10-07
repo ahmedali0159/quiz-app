@@ -6,8 +6,8 @@
     align-items: center;
     margin-right: 30px;
     font-size: 12px;
-}
-
-.account > span:last-child {
+  }
+  
+  .account > span:last-child {
     cursor: pointer;
-}
+  }
