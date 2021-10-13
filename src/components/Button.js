@@ -1,4 +1,4 @@
-import classes from "../components/Styles/Button.module.css";
+import classes from "./Styles/Button.module.css";
 
 export default function Button({className, children}) {
   return (
