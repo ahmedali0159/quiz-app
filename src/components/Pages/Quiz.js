@@ -103,6 +103,7 @@ export default function Quiz() {
           <h1>{qna[currentQuestion].title}</h1>
           <h4>Question can have multiple answer</h4>
           <Answers
+          input
             options={qna[currentQuestion].options}
             handleChange={handleAnswerChange}
           />
@@ -112,7 +113,7 @@ export default function Quiz() {
             submit={submit}
             pregress={percentage}
           />
-          <Miniplayer />
+          <Miniplayer id={id} title={qna[currentQuestion].title}/>
         </>
       )}
     </div>

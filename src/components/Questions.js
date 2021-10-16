@@ -1,16 +1,14 @@
 import Answers from "./Answers";
 import classes from "../components/Styles/Question.module.css";
 
-export default function Question() {
-  return (
-    <>
-      <div className={classes.question}>
+export default function Question({answers = []}) {
+  return answers.map((answer, index) => (
+    <div className={classes.question} key={index} >
         <div className={classes.qtitle}>
           <span className="material-icons-outlined">help_outline</span>
-          Here goes the question from learn with sumit?
+          {answer.title}
         </div>
-        <Answers />
+        <Answers input={false} options={answers.options} />
       </div>
-    </>
-  );
+  ))
 }
